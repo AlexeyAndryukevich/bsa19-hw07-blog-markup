@@ -1,0 +1,70 @@
+.header-wrp {
+    display: grid;
+    grid-template: 
+        "logo icons" 60px
+        "logo navigation " 60px
+        / 350px  850px
+    ;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--hover-color);
+}
+
+.search {
+    margin-right: 50px;
+}
+
+.logo-wrp {
+    grid-area: logo;
+    place-self: center start;
+}
+
+.icons-wrp {
+    grid-area: icons;
+    place-self: center end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-wrp {
+    grid-area: navigation;
+    place-self: center end;
+}
+
+.header-wrp .logo {
+    height: 100px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu li a:hover {
+    color: var(--hover-color);
+}
