@@ -3,20 +3,17 @@
     grid-template: 
         "logo icons" 60px
         "logo navigation " 60px
-        / 350px  850px
+        / 350px  auto
     ;
-}
-
-.btn {
-    cursor: pointer;
-}
-
-.btn:hover {
-    color: var(--hover-color);
 }
 
 .search {
     margin-right: 50px;
+    cursor: pointer;
+}
+
+.search path:hover {
+    color: var(--hover-color);
 }
 
 .logo-wrp {
@@ -46,11 +43,10 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: right;
+    display: flex;
 }
 
 .menu li {
-    display: inline-block;
     margin: 0 10px;
     font-size: 1.5em;
 }
@@ -66,5 +62,9 @@
 }
 
 .menu li a:hover {
+    color: var(--hover-color);
+}
+
+.menu li path:hover {
     color: var(--hover-color);
 }
