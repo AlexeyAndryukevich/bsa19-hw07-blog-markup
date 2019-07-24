@@ -40,8 +40,16 @@ h4 {
     text-align: center;
 }
 
+.text-right {
+    text-align: right;
+}
+
 .ellipsis {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.logo {
+    height: 100%;
 }

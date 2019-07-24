@@ -19,6 +19,7 @@
 .logo-wrp {
     grid-area: logo;
     place-self: center start;
+    height: 100px;
 }
 
 .icons-wrp {
@@ -33,10 +34,6 @@
 .navigation-wrp {
     grid-area: navigation;
     place-self: center end;
-}
-
-.header-wrp .logo {
-    height: 100px;
 }
 
 .menu {
