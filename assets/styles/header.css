@@ -1,9 +1,9 @@
 .header-wrp {
     display: grid;
     grid-template: 
-        "logo icons" 60px
-        "logo navigation " 60px
-        / 350px  auto
+        "logo icons" 65px
+        "logo navigation" 65px
+        / 300px  auto
     ;
 }
 
@@ -33,35 +33,79 @@
 
 .navigation-wrp {
     grid-area: navigation;
-    place-self: center end;
 }
 
-.menu {
+.social {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
-.menu li {
+.social li {
     margin: 0 10px;
-    font-size: 1.5em;
+    font-size: 1.4rem;
 }
 
-.menu li:last-child {
+.social li:last-child {
     margin-right: 0;
 }
 
-.menu li a {
+.social li a {
     text-decoration: none;
     cursor: pointer;
     padding: 0;
 }
 
-.menu li a:hover {
+.social li a:hover {
     color: var(--hover-color);
 }
 
-.menu li:hover path {
+.social li:hover path {
+    color: var(--hover-color);
+}
+
+  
+#menu-toggle input {
+    display: none;   
+}
+    
+
+#menu-toggle span {
+    display: none;
+}
+
+#menu-toggle {
+    height: 100%;
+}
+
+#menu {
+    height: 100%;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu li {
+    margin: 0 10px;
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+#menu li:last-child {
+    margin-right: 0;
+}
+
+#menu li a {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#menu li a:hover {
     color: var(--hover-color);
 }
