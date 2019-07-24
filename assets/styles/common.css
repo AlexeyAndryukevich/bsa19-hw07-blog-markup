@@ -15,7 +15,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-weight: normal;
 }
 
@@ -29,4 +30,18 @@ h2 {
 
 h3 {
     font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

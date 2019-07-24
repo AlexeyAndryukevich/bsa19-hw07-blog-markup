@@ -12,7 +12,7 @@
     cursor: pointer;
 }
 
-.search path:hover {
+.search:hover path {
     color: var(--hover-color);
 }
 
@@ -65,6 +65,6 @@
     color: var(--hover-color);
 }
 
-.menu li path:hover {
+.menu li:hover path {
     color: var(--hover-color);
 }
