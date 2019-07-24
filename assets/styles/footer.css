@@ -15,13 +15,11 @@
 
 .contact-wrp {
     grid-area: contact;
-    justify-self: start;
     margin: 10px 0;
 }
 
 .copyright-wrp {
     grid-area: copyright;
-    justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,6 +28,5 @@
 
 .rehearsal-wrp {
     grid-area: rehearsal;
-    justify-self: end;
     margin: 10px 0;
 }

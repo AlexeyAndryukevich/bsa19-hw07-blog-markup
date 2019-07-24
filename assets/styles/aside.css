@@ -78,11 +78,6 @@
     margin-top: 0;
 }
 
-.search-form input {
-    flex-grow: 1;
-    padding: 5px;
-}
-
 .search-form input::placeholder {
     color: #fff;
     opacity: 0.5;
@@ -93,6 +88,7 @@
     background: transparent;
     color: #fff;
     border: 1px solid #fff;
+    flex-grow: 1;
 }
 
 .serch-form-submit {
@@ -101,6 +97,7 @@
     background-color: #485769;
     cursor: pointer;
     padding: 5px;
+    width: 80px;
 }
 
 .serch-form-submit:hover {

@@ -32,7 +32,7 @@ body {
 
 .footer-wrp {
     grid-area: footer;
-    background-color: rgb(223, 96, 174);
+    background-color: var(--header-color);
     padding: 0 calc((100% - 1200px) / 2);
 }
 

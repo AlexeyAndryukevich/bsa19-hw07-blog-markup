@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="./assets/styles/main-section.css">
     <link rel="stylesheet" href="./assets/styles/aside.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="./assets/styles/media.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="header-wrp">
+    <section class="header-wrp">        
         <div class="logo-wrp">
             <img class="logo" src="./assets/images/logo.png" alt="Lehava logo"> 
         </div>
@@ -33,13 +34,19 @@
             </ul>
         </div>  
         <nav class="navigation-wrp">
-            <ul class="menu">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Фото</a></li>
-                <li><a href="#">Видео</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Фото</a></li>
+                    <li><a href="#">Видео</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
         </nav>
     </section>
     <section class="main-wrp">
@@ -256,7 +263,7 @@
             <div class="footer-logo-wrp">
                 <img class="logo" src="./assets/images/logo.png" alt="Lehava logo"> 
             </div>
-            <p>&copy; Copyright 2019 | Alexey Andryukevitch</p>
+            <p class="text-center">&copy; Copyright 2019 | Alexey Andryukevitch</p>
         </div>
         <div class="rehearsal-wrp">
             <p class="text-right">Репетиции проходят по ПН и СР в 19:00 на м.Лукьяноская (г.Киев)</p>
