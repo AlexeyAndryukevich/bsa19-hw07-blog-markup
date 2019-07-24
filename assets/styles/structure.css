@@ -1,32 +1,38 @@
 body {
     display: grid;
     grid-template: 
-        "header header header header" 120px
+        "header header header header" 130px
+        ". main autor-info ." max-content
         ". main aside ." auto
-        "footer footer footer footer" 80px
+        "footer footer footer footer" auto
         / auto 900px 300px auto
     ;
 }
 
 .header-wrp {
     grid-area: header;
-    background-color: var(--header-color);
+    background-color: var(--base-color);
     padding: 0 calc((100% - 1200px) / 2);
 }
 
 .main-wrp {
     grid-area: main;
-    background-color: beige;
+    background-color: var(--light-accent-color);
+}
+
+.autor-info-wrp {
+    grid-area: autor-info;
+    background-color: var(--light-base-color);
 }
 
 .aside-wrp {
     grid-area: aside;
-    background-color: grey;
+    background-color: var(--light-base-color);
 }
 
 .footer-wrp {
     grid-area: footer;
-    background-color: rgb(223, 96, 174);
+    background-color: var(--base-color);
     padding: 0 calc((100% - 1200px) / 2);
 }
 

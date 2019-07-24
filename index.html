@@ -5,53 +5,269 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Блог</title>
-    <!-- <link rel="stylesheet" href="./assets/styles/reset.css"> -->
     <link rel="stylesheet" href="./assets/styles/structure.css">
     <link rel="stylesheet" href="./assets/styles/header.css">
     <link rel="stylesheet" href="./assets/styles/common.css">
+    <link rel="stylesheet" href="./assets/styles/main-section.css">
+    <link rel="stylesheet" href="./assets/styles/aside.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="./assets/styles/media.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="header-wrp">
-
+    <section class="header-wrp">        
         <div class="logo-wrp">
             <img class="logo" src="./assets/images/logo.png" alt="Lehava logo"> 
         </div>
-
         <div class="icons-wrp">
-            <div class="search btn"><svg height="25" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div>
-
-            <ul class="menu">
-                <li><a href="https://www.facebook.com/LehavaKJMC">
+            <div class="search"><svg height="25" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/LehavaKJMC" title="Facebook" target="_blank">
                     <svg height="25" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
                 </a></li>
-                <li><a href="https://www.instagram.com/LehavaKJMC">
+                <li><a href="https://www.instagram.com/LehavaKJMC" title="Instagram" target="_blank">
                     <svg height="25" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
                 </a></li>
-                <li><a href="https://www.youtube.com/channel/UCqkTstU-1wnVnzEtSizYO8g">
+                <li><a href="https://www.youtube.com/channel/UCqkTstU-1wnVnzEtSizYO8g" title="YouTube" target="_blank">
                     <svg height="25" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
                 </a></li>
             </ul>
         </div>  
-        <div class="navigation-wrp">
-            <ul class="menu">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Фото</a></li>
-                <li><a href="#">Видео</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </div>
-
+        <nav class="navigation-wrp">
+            <div id="menu-toggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Фото</a></li>
+                    <li><a href="#">Видео</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
     </section>
     <section class="main-wrp">
-        main
-    </section>            
+        <article class="article-card"> 
+            <div class="article-content-wrp">
+                <div class="article-img-wrp">
+                    <img class="article-img" src="./assets/images/news/10_years.jpg" alt="Торт на 10 лет">
+                    <p class="article-publication-time">20.07.2019 19:32</p>
+                </div>
+                <h2 class="article-title">Нам уже 10 лет!</h2>            
+                <p class="article-description">Сегодня нашему коллективу исполнилось 10 лет, шутка ли? Нам и самим слабо верится, как быстро время летит! За это время мы сущетсвенно выросли как количественно, так и качественно) Дальше больше!)</p>
+            </div>
+            <div class="article-extra-info">
+                <div class="article-star-rating">
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star">★</label>
+                </div>
+                <div class="article-coments-stat">
+                    <svg height="18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>
+                    <span class="article-comments-num">12</span>
+                </div>
+            </div>
+        </article>    
+        <article class="article-card"> 
+            <div class="article-content-wrp">
+                <div class="article-img-wrp">
+                    <img class="article-img" src="./assets/images/news/jewish-song.jpg" alt="Jewish Song">
+                    <p class="article-publication-time">30.06.2019 22:32</p>
+                </div>
+                <h2 class="article-title">Концерт на крыше Jewish Song</h2>     
+                <p class="article-description">Приняли участие в мега крутом концерте, на Крыше, в центре Киева, с панарамным видом на Подол, музыка, танцы, фонарики, угощения... Незабываемо!)</p>
+            </div>
+            <div class="article-extra-info">
+                <div class="article-star-rating">
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                </div>
+                <div class="article-coments-stat">
+                    <svg height="18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>
+                    <span class="article-comments-num">21</span>
+                </div>
+            </div>
+        </article>
+        <article class="article-card"> 
+            <div class="article-content-wrp">
+                <div class="article-img-wrp">
+                    <img class="article-img" src="./assets/images/news/rehearsal.jpg" alt="Rehearsal">
+                    <p class="article-publication-time">25.06.2019 21:23</p>
+                </div>
+                <h2 class="article-title">Подготовка к Jewish Song</h2>            
+                <p class="article-description">Очень активно готовимся к замечательному концерту, который пройдет 30.06 в 19:00 на Десятинной, 12. До встречи!</p>
+            </div>
+            <div class="article-extra-info">
+                <div class="article-star-rating">
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star">★</label>
+                    <label class="star-rating__star">★</label>
+                </div>
+                <div class="article-coments-stat">
+                    <svg height="18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>
+                    <span class="article-comments-num">4</span>
+                </div>
+            </div>
+        </article>
+        <article class="article-card"> 
+            <div class="article-content-wrp">
+                <div class="article-img-wrp">
+                    <img class="article-img" src="./assets/images/news/purim-rishon.jpg" alt="Пурим в Ришоне">
+                    <p class="article-publication-time">23.03.2019 13:17</p>
+                </div>
+                <h2 class="article-title">Пурим в Ришоне!</h2>            
+                <p class="article-description">Кульминацией нашей поездки в Израиль стал Пуримный концерт в Ришоне у наших хороших друзей!</p>
+            </div>                
+            <div class="article-extra-info">
+                <div class="article-star-rating">
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star">★</label>
+                </div>
+                <div class="article-coments-stat">
+                    <svg height="18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>
+                    <span class="article-comments-num">7</span>
+                </div>
+            </div>
+        </article>        
+        <article class="article-card"> 
+            <div class="article-content-wrp">
+                <div class="article-img-wrp">
+                    <img class="article-img" src="./assets/images/news/erev-Podol.jpg" alt="Ерев Шаббат на Подоле">
+                    <p class="article-publication-time">15.06.2018 21:43</p>
+                </div>
+                <h2 class="article-title">Ерев Шаббат на Подоле</h2>            
+                <p class="article-description">Лето прекрасная пора для уличных активностей! И что в пятницу вечером может быть лучше встречи Шаббата в простой семейной атмосфере, в дружных хороводах под живую музыку да еще и на Поделе. И это таки каждую пятницу на протяжении всего лета, приходи обязательно!)</p>
+            </div>
+            <div class="article-extra-info">
+                <div class="article-star-rating">
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                    <label class="star-rating__star is-selected">★</label>
+                </div>
+                <div class="article-coments-stat">
+                    <svg height="18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comment-alt" class="svg-inline--fa fa-comment-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"></path></svg>
+                    <span class="article-comments-num">23</span>
+                </div>
+            </div>
+        </article> 
+    </section>   
+    <section class="autor-info-wrp">
+        <img class="autor-photo" src="./assets/images/avatars/Alexey-Andryukevitch.png" alt="Autor photo">
+        <p class="autor-name">Алексей Андрюкевич</p>
+        <p class="autor-description">Студент Binary Studio Acadamy 2019, поток .Net. Думал что умею верстать, понял что отчасти ошибался)) С интересом осваиваю почти в бою Gridы и новые плюшки CSS. Для блога взял танцевальный коллектив в котором состою уже года 4. Lehava в переводе с иврита означает пламя, мы молодежный еврейский танцевальный коллектив, и соответственно профиль у нас это еврейские танцы, но т.к. мы моледежь, то любим эксперементировать и пробовать разные стили. Вобщем не скучно))</p>
+    </section>
     <section class="aside-wrp">
-        aside
+        <div class="social-wrp">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/LehavaKJMC" title="Facebook" target="_blank">
+                    <svg height="25" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+                </a></li>
+                <li><a href="https://www.instagram.com/LehavaKJMC" title="Instagram" target="_blank">
+                    <svg height="25" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                </a></li>
+                <li><a href="https://www.youtube.com/channel/UCqkTstU-1wnVnzEtSizYO8g" title="YouTube" target="_blank">
+                    <svg height="25" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                </a></li>
+            </ul>
+        </div>  
+        <form> 
+            <h4 class="text-center">Подписка</h4>
+            <div class="subscribe-form">
+                <input class="subscribe-form-username" type="text" placeholder="Имя">
+                <input class="subscribe-form-email" type="email" placeholder="E-mail">
+                <input class="subscribe-form-submit" type="submit" value="Подписаться">
+            </div> 
+        </form>
+        <form>
+            <h4 class="text-center">Поиск</h4>
+            <div class="search-form">              
+                <input class="serch-form-keywords" type="text" placeholder="ключевые слова">
+                <input class="serch-form-submit" type="submit" value="Найти">
+            </div>
+        </form>
+        <div class="tags-wrp text-center">
+            <h4>Тэги</h4>
+            <p class="tags text-center">
+                <a class="tag-item" href="#">танцы</a>
+                <a class="tag-item" href="#">еврейские</a>
+                <a class="tag-item" href="#">хороводы</a>
+                <a class="tag-item" href="#">концерты</a>
+                <a class="tag-item" href="#">шаббат</a>
+                <a class="tag-item" href="#">еревшаббат</a>
+                <a class="tag-item" href="#">хипхоп</a>
+                <a class="tag-item" href="#">джаз</a>
+                <a class="tag-item" href="#">восток</a>
+                <a class="tag-item" href="#">коллектив</a>
+                <a class="tag-item" href="#">радость</a>
+                <a class="tag-item" href="#">веселие</a>
+                <a class="tag-item" href="#">дружба</a>
+                <a class="tag-item" href="#">репетиция</a>
+                <a class="tag-item" href="#">постановка</a>
+                <a class="tag-item" href="#">хореография</a>
+                <a class="tag-item" href="#">поездки</a>
+                <a class="tag-item" href="#">Израиль</a>
+                <a class="tag-item" href="#">Подол</a>
+                <a class="tag-item" href="#">CampFest</a>
+                <a class="tag-item" href="#">Пурим</a>
+                <a class="tag-item" href="#">Ришон</a>
+            </p>
+        </div>
+        <div class="comments-wrp">
+            <h4 class="text-center">Комментарии</h4>
+            <div class="comment-block">
+                <div class="comment-avatar">
+                    <img src="assets/images/avatars/Dzyadovich-Regina.jpg" alt="user avatar">
+                </div>
+                <div class="comment-header">
+                    <span class="comment-user"><a href="#">Regina Dzyadovich</a></span>
+                    <span class="comment-datetime">20.07.2019 20:37</span>
+                </div>
+                <div class="comment-body">
+                    <p class="ellipsis">Ооооо!Поздравляю вас ,дорогие Лехава!❤❤❤🌹🌹🌹</p>
+                </div>      
+            </div>
+            <div class="comment-block">
+                    <div class="comment-avatar">
+                        <img src="assets/images/avatars/Shkaptsov-Denya.jpg" alt="user avatar">
+                    </div>
+                    <div class="comment-header">
+                        <span class="comment-user"><a href="#">Деня Шкапцов</a></span>
+                        <span class="comment-datetime">20.07.2019 19:44</span>
+                    </div>
+                    <div class="comment-body">
+                        <p class="ellipsis">Поздравляем вас!! Вы молодцы и большой пример для нас) Так держать!!!</p>
+                    </div>      
+                </div>
+        </div>
     </section>
     <section class="footer-wrp">
-        footer
+        <div class="contact-wrp">
+            <p>По вопросам участия или сотрудничества обращайтеcь по телефону: 093&nbsp;48&nbsp;43&nbsp;777 - Алексей</p>
+        </div>
+        <div class="copyright-wrp">
+            <div class="footer-logo-wrp">
+                <img class="logo" src="./assets/images/logo.png" alt="Lehava logo"> 
+            </div>
+            <p class="text-center">&copy; Copyright 2019 | Alexey Andryukevitch</p>
+        </div>
+        <div class="rehearsal-wrp">
+            <p class="text-right">Репетиции проходят по ПН и СР в 19:00 на м.Лукьяноская (г.Киев)</p>
+        </div>
     </section>
 </body>
 </html>
