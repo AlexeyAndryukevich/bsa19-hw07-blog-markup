@@ -6,7 +6,7 @@
 }
 
 .article-card {
-    background-color: var(--card-color);
+    background-color: var(--base-color);
     position: relative;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     display: flex;
@@ -36,7 +36,7 @@
     padding: 2px 7px;
     bottom: 5px;
     right: 5px;
-    background-color: var(--card-color);
+    background-color: var(--base-color);
     opacity: 0.85;
 }
 

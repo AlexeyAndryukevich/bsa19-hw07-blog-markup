@@ -2,32 +2,29 @@
 @media only screen and (max-width : 1200px) {
     body {
         grid-template: 
-            "header header" 120px
+            "header header" 130px
             "main autor-info" max-content
             "main aside" auto
             "footer footer" auto
             / auto 300px
         ;
+    }  
+    
+    .header-wrp {
+        padding: 0 20px ;
     }
-    .main-wrp {
-        background-color: greenyellow;
-    }
-}
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-   
-    .main-wrp {
-        background-color: blueviolet;
+    .footer-wrp { 
+        padding: 0 20px;
     }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-    .main-wrp {
-        background-color: chocolate;
+@media only screen and (max-width : 768px) {   
+    html {
+        font-size: 20px;
     }
-
+    
     body {
         grid-template: 
             "header" auto
@@ -36,7 +33,15 @@
             "aside" auto
             "footer" auto
             / auto
-        ;
+        ;        
+    }
+
+    .autor-info-wrp {
+        padding: 15px;
+    }
+
+    .aside-wrp {
+        padding: 15px;
     }
 
     .header-wrp {
@@ -58,11 +63,11 @@
         margin-right: 0;
     }
 
-    .header-wrp .menu {
+    .header-wrp .social {
         display: none;
     }
          
-    #menuToggle input {
+    #menu-toggle input {
         display: block;
         width: 50px;
         height: 40px;
@@ -72,10 +77,9 @@
         cursor: pointer;   
         opacity: 0; 
         z-index: 3; 
-    }
-        
+    }        
 
-    #menuToggle span {
+    #menu-toggle span {
         display: block;
         width: 33px;
         height: 4px;
@@ -90,26 +94,26 @@
                     opacity 0.55s ease;
     }
     
-    #menuToggle span:first-child {
+    #menu-toggle span:first-child {
         transform-origin: 0% 0%;
     }
     
-    #menuToggle span:nth-last-child(2) {
+    #menu-toggle span:nth-last-child(2) {
         transform-origin: 0% 100%;
     } 
 
-    #menuToggle input:checked ~ span {
+    #menu-toggle input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
         background: #232323;
     } 
 
-    #menuToggle input:checked ~ span:nth-last-child(3) {
+    #menu-toggle input:checked ~ span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
     } 
 
-    #menuToggle input:checked ~ span:nth-last-child(2) {
+    #menu-toggle input:checked ~ span:nth-last-child(2) {
         transform: rotate(-45deg) translate(0, -1px);
     }
     
@@ -134,7 +138,7 @@
     }
     
 
-    #menuToggle input:checked ~ ul {
+    #menu-toggle input:checked ~ ul {
         transform: none;
     }
 
@@ -147,17 +151,10 @@
         ;
         align-items: unset;
         grid-gap: 10px;
-        padding: 10px;
+        padding: 20px;
     }
 
     .footer-wrp .rehearsal-wrp p {
         text-align: left;
-    }
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-    .main-wrp {
-        background-color: crimson;
     }
 }

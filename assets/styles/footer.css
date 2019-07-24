@@ -5,7 +5,8 @@
         / 1fr 1fr 1fr
     ;
     align-items: center;
-    grid-gap: 10px
+    grid-gap: 10px;
+    font-size: 0.9rem;
 }
 
 .footer-logo-wrp {
@@ -15,7 +16,6 @@
 
 .contact-wrp {
     grid-area: contact;
-    margin: 10px 0;
 }
 
 .copyright-wrp {
@@ -23,10 +23,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .rehearsal-wrp {
     grid-area: rehearsal;
-    margin: 10px 0;
 }

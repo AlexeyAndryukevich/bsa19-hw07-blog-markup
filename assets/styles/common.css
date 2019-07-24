@@ -3,13 +3,14 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
     color: var(--text-color);
     margin: 0;
-    --text-color:#000; 
-    --card-color:#b2c6dd;
-    --hover-color:#e14a4c; 
-    --header-color:#b2c6dd;
+    --base-color:#b2c6dd;
+    --hover-color: #5385be;
+    --light-base-color:#d8e2ec;
+    --accent-color: #EEC07A;
+    --light-accent-color:#FFEAC9;
 }
 
-body {
+html {
     font-size: 16px;
 }
 

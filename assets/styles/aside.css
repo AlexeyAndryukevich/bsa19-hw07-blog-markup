@@ -8,16 +8,16 @@
 .autor-photo {
     height: 200px;
     margin: 5px;
-    border: 1px solid #000;
+    border: 1px solid var(--hover-color);
 }
 
 .autor-name {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     margin: 5px;
 }
 
 .autor-description {
-    font-size: 0.75em;
+    font-size: 0.85rem;
     margin: 5px;
 }
 
@@ -25,11 +25,16 @@
     padding: 5px;
 }
 
+.aside-wrp h4 {
+    margin: 18px 0 8px 0;
+}
+
 .social-wrp {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 15px;
 }
 
 .subscribe-form {
@@ -39,12 +44,8 @@
     padding: 5px;
 
     border-radius: .5rem;
-    background-color: #3d454f;
+    background-color: var(--base-color);
     margin: 5px;
-}
-
-.subscribe-form h4 {
-    color: #fff;
 }
 
 .subscribe-form-username,
@@ -52,24 +53,21 @@
     margin: 5px;
     border-radius: 5px;
     border: none;
-    background: #485769;
     padding: 5px;
-    color: #fff;
 }
 
 .subscribe-form-submit {
     border-radius: 5px;
-    border: 1px solid #fff;
-    color: #fff;
-    background-color: transparent;
+    border: none;
+    background-color: var(--hover-color);
     margin: 5px;
     padding: 5px;
     cursor: pointer;
 }
 
 .subscribe-form-submit:hover {
-    background-color: #44c8ed;
-    border-color: #44c8ed;
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .search-form {
@@ -78,30 +76,25 @@
     margin-top: 0;
 }
 
-.search-form input::placeholder {
-    color: #fff;
-    opacity: 0.5;
-}
-
 .serch-form-keywords {
     border: none;
-    background: transparent;
-    color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid var(--hover-color);
+    border-radius: 5px 0 0 5px ;
     flex-grow: 1;
+    padding-left: 5px;
 }
 
 .serch-form-submit {
-    border: 1px solid #fff;
-    color: #fff;
-    background-color: #485769;
+    border: none;
+    background-color: var(--hover-color);
     cursor: pointer;
     padding: 5px;
     width: 80px;
+    border-radius: 0 5px 5px 0;
 }
 
 .serch-form-submit:hover {
-    background-color: #44c8ed;
+    background-color: var(--accent-color);
 }
 
 .tags-wrp {
@@ -109,9 +102,9 @@
 }
 
 .tag-item {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     display: inline-block;
-    background-color: rgba(68, 200, 237, 0.6);
+    background-color: #b1c5dc;
     border-radius: 5px;
     padding: 2px 4px;
     margin: 2px;
@@ -119,7 +112,7 @@
 }
 
 .tag-item:hover {
-    background-color: rgba(68, 200, 237, 1);
+    background-color: var(--hover-color);
 }
 
 .comments-wrp {
@@ -134,10 +127,10 @@
         / min-content auto
     ;
     grid-column-gap: 5px;
-    margin: 5px 0;
+    margin: 10px 0 5px 0;
     padding: 5px;
-    border: 1px solid #E9ECEF;
     border-radius: 5px;
+    background-color:  var(--base-color);
 }
 
 .comment-avatar {
